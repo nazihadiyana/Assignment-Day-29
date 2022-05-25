@@ -19,6 +19,9 @@ router.get("/productCategory", productCategoryRoute.listProductCategory);
 router.get("/productCategory/:id", productCategoryRoute.detailProductCategory);
 router.post("/productCategory", productCategoryRoute.insertProductCategory);
 router.put("/productCategory/:id", productCategoryRoute.updateProductCategory);
-router.delete("/productCategory/:id", productCategoryRoute.deleteProductCategory);
+router.delete(
+  "/productCategory/:id",
+  productCategoryRoute.deleteProductCategory
+);
 
 module.exports = router;
